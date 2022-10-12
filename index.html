@@ -1,43 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/0c7cbe4b91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
-<body>
-    <div class="box">
-        <div class="front">
-            <label for="cube1">Log In</label><br>
-            <label for="cube1" id="sup">Register</label><br>
-        </div>
+<div class="container">
+    <div  class="box">
         <div class="regis">
             <form action="" class="frm">
-                <h1>REGISTRATION</h1>
-                <label for="name">Name</label><br>
-                <input type="text" name="Name" id="name" placeholder="Enter Full Name"><br>
-                <label for="uname">UserName</label><br>
-                <input type="text" name="UName" id="uname" placeholder="Enter Username"><br>
-                <label for="eid">Email-Id</label><br>
-                <input type="text" name="Id" id="eid" placeholder="Enter Email-Id"><br>
-                <label for="paaswrd">Password</label><br>
-                <input type="password" name="Passwrd" id="passwrd" placeholder="Enter Password"><br>
-                <label for="conpass">Confirm Password</label><br>
-                <input type="password" name="ConPass" id="conpass" placeholder="Confirm Password"><br>
-                <label for="birthday">Date of Birth:</label><br>
-                <input type="date" name="birth" id="birthday"><br>
                 
-                <label>Gender:</label><br>
-                <input type="radio" name="Gender" id="male">
-                <label for="male">Male</label><br>
-                <input type="radio" name="Gender" id="female">
-                <label for="female">Female</label><br>
-                <input type="radio" name="Gender" id="transgender">
-                <label for="transgender">Transgender</label><br>
+                <h1 class="title">REGISTRATION FORM</h1><br><br><br><br>
+            
+                <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="Name" id="name" placeholder="Enter Full Name"><br>
+            </div>
+                <div class="field">
+                <i class="fas fa-user"></i>&nbsp;<label for="uname">UserName</label>
+                
+                <input type="text" name="UName" id="uname" placeholder="Enter Username"><br>
+            </div>
+                <div class="field">
+                <label for="eid">Email-Id</label>
+                <input type="email" name="Id" id="eid" placeholder="Enter Email-Id"><br>
+            </div>
+                <div class="field">
+                <label for="pno">Mobile No.</label>
+                <input type="text" name="mno" id="pno" placeholder="Enter Mobile No."><br>
+            </div>
+                <div class="field">
+                <label for="stno">Student No.</label>
+                <input type="text" name="stnum" id="stno" placeholder="Enter Student No."><br>
+            </div>
+                <div class="field">
+                <label for="rollno">University Roll No.</label>
+                <input type="text" name="unum" id="rollno" placeholder="Enter University Roll No."><br>
+            </div>
+                <div class="field">
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" name="birth" id="birthday"><br>
+            </div>  
+                <div class="field">
+                <label for="year">Year</label>
+                <input type="number" name="years" id="year" min="1" max="4" placeholder="Year"><br>
+            </div>    
+                <div class="field">
+                <label for="branch">Branch</label>
+                <input list="branch" name="branches" placeholder="Branch">
+                <datalist id="branch">
+                    <option value="CSE"></option>
+                    <option value="CSE(AI&ML)"></option>
+                    <option value="CSE(DS)"></option>
+                    <option value="CS"></option>
+                    <option value="AI&ML"></option>
+                    <option value="CSIT"></option>
+                    <option value="IT"></option>
+                    <option value="ECE"></option>
+                    <option value="EN"></option>
+                    <option value="ME"></option>
+                    <option value="CE"></option>
+                </datalist><br>
+            </div>
+                <div class="field">
+                <label for="domain">Domain</label>
+                <input list="domain" name="domains" placeholder="Domain">
+                <datalist id="domain">
+                    <option value="Web Development"></option>
+                    <option value="Android Development"></option>
+                    <option value="Graphic Designing"></option>
+                    <option value="Blockchain Technology"></option>
+                </datalist><br>
+            </div>
+                <div class="field">
+                <label>Gender:</label>
+            </div> 
+                <div class="field">
+                <input type="radio" name="Gender" id="male" required>&nbsp;
+                <label for="male">Male</label>
+                
+            </div>
+                <div class="field">
+                <input type="radio" name="Gender" id="female">&nbsp;
+                <label for="female">Female</label>
+            </div>   
+                <div class="field">
+                <input type="radio" name="Gender" id="transgender">&nbsp
+                <label for="transgender">Transgender</label>
+            </div>
+                <div class="field">
+                <i class="fas fa-lock"></i>&nbsp;
+                <label for="passwrd">Password</label>
+                <input type="password" name="Passwrd" id="passwrd" placeholder="Enter Password"><br>
+            </div>
+                <div class="field">
+                <i class="fas fa-lock"></i>
+                <label for="conpass">Confirm Password</label>
+                <input type="password" name="ConPass" id="conpass" placeholder="Confirm Password"><br><br>
+            </div>
+                <div class="field">
+                <input type="submit" value="Submit" id="btn">
+            </div>  
+                <div class="field">
+                <input type="reset" value="Reset" id="btn1">
+            </div>
+                <label for="cube1" id="btm">Login Here</label>
             </form>
         </div>
     </div>
+</div>
 </body>
 </html>

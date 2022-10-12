@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Brush Script MT,cursive;
     transition: 1s,ease;
 }
 body{
@@ -10,4 +10,91 @@ body{
     background-attachment: fixed;
     background-size: cover; 
     perspective: 1000px;
+}
+
+.box{
+    align-items: center;
+    margin: 50px 325px 50px 325px;
+    width: 830px;
+    height: 4143px;
+    position: absolute;
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(190, 245, 236));
+    box-shadow: 0px 0px 5px rgb(255, 68, 248),0px 0px 30px rgb(255, 68, 248),
+                inset 0px 0px 5px rgb(255, 68, 248), inset 0px 0px 30px rgb(255, 68, 248);
+    /*border: 2px solid rgb(95, 201, 243);*/
+}
+
+#sup,#btn,#btn1{
+    background-image: linear-gradient(45deg, #ff00c4, #8000ff);
+}
+#btn,#btn1:focus{
+    width: calc(100% - 80);
+    left: 40px;
+}
+.title{
+    width: 100%;
+    color: #8d006c;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 35px;
+    text-shadow: 0px 0px 20px #ff00c4;
+    position: absolute;
+    margin-top: 35px;
+}
+.frm label{
+    display: none;
+    font-size: medium;
+    font-weight: bolder;
+
+}
+.frm label,input:focus{
+    display: block;
+}
+.frm input{
+    left: 40px;
+    text-align: center;
+    position: relative;
+    width: calc(100% - 80px);
+    display: block;
+    line-height: 40px;
+    top: 20px;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0px 0px 5px rgb(247, 240, 247),0px 0px 30px rgb(15, 12, 14);
+    margin: 20px 0px;
+    font-size: 15px;
+}
+.frm input:focus{
+    width: calc(100% - 80);
+    left: 20px;
+    background: #ffcbf9;
+    box-shadow: 0px 0px 5px #000, 0px 0px 30px #c900b2;
+}
+#btm{
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    color:#720058;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.field{
+    width:450px;
+    height:150px;
+    margin: 65px 144px 65px 144px;
+    padding: 10px 5px 10px 44px;
+}
+.frm{
+    height: 2366px;
+}
+input[type=radio]{
+    box-shadow: none;
+    float:left;
+    clear: none;
+    margin: 2px 0px 0px 2px;
+
 }
