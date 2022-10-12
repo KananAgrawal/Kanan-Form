@@ -17,40 +17,48 @@
             
                 <div class="field">
                 <label for="name">Name</label>
-                <input type="text" name="Name" id="name" placeholder="Enter Full Name"><br>
+                <input type="text" name="Name" id="name" placeholder="Enter Full Name"  onkeyup="validation()"><br>
+                <span id="name-error" class="text-danger"></span>
             </div>
                 <div class="field">
                 <i class="fas fa-user"></i>&nbsp;<label for="uname">UserName</label>
-                
                 <input type="text" name="UName" id="uname" placeholder="Enter Username"><br>
+                <span id="username-error"></span>
             </div>
                 <div class="field">
                 <label for="eid">Email-Id</label>
                 <input type="email" name="Id" id="eid" placeholder="Enter Email-Id"><br>
+                <span id="email-error"></span>
             </div>
                 <div class="field">
                 <label for="pno">Mobile No.</label>
                 <input type="text" name="mno" id="pno" placeholder="Enter Mobile No."><br>
+                <span id="phone-error"></span>
             </div>
                 <div class="field">
                 <label for="stno">Student No.</label>
                 <input type="text" name="stnum" id="stno" placeholder="Enter Student No."><br>
+                <span id="stno-error"></span>
             </div>
                 <div class="field">
                 <label for="rollno">University Roll No.</label>
                 <input type="text" name="unum" id="rollno" placeholder="Enter University Roll No."><br>
+                <span id="rollno-error"></span>
             </div>
                 <div class="field">
                 <label for="birthday">Date of Birth:</label>
                 <input type="date" name="birth" id="birthday"><br>
+                <span id="DOB-error"></span>
             </div>  
                 <div class="field">
                 <label for="year">Year</label>
                 <input type="number" name="years" id="year" min="1" max="4" placeholder="Year"><br>
+                <span id="year-error"></span>
             </div>    
                 <div class="field">
                 <label for="branch">Branch</label>
                 <input list="branch" name="branches" placeholder="Branch">
+                <span id="Branch-error"></span>
                 <datalist id="branch">
                     <option value="CSE"></option>
                     <option value="CSE(AI&ML)"></option>
@@ -68,11 +76,13 @@
                 <div class="field">
                 <label for="domain">Domain</label>
                 <input list="domain" name="domains" placeholder="Domain">
+                <span id="domain-error"></span>
                 <datalist id="domain">
                     <option value="Web Development"></option>
                     <option value="Android Development"></option>
                     <option value="Graphic Designing"></option>
                     <option value="Blockchain Technology"></option>
+                    <option value="Machine Learning"></option>
                 </datalist><br>
             </div>
                 <div class="field">
@@ -95,14 +105,17 @@
                 <i class="fas fa-lock"></i>&nbsp;
                 <label for="passwrd">Password</label>
                 <input type="password" name="Passwrd" id="passwrd" placeholder="Enter Password"><br>
+                <span id="password-error"></span>
             </div>
                 <div class="field">
                 <i class="fas fa-lock"></i>
                 <label for="conpass">Confirm Password</label>
                 <input type="password" name="ConPass" id="conpass" placeholder="Confirm Password"><br><br>
+                <span id="conpass-error"></span>
             </div>
                 <div class="field">
                 <input type="submit" value="Submit" id="btn">
+                <span id="submit-error"></span>
             </div>  
                 <div class="field">
                 <input type="reset" value="Reset" id="btn1">
@@ -112,5 +125,6 @@
         </div>
     </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

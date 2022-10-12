@@ -96,5 +96,14 @@ input[type=radio]{
     float:left;
     clear: none;
     margin: 2px 0px 0px 2px;
-
+}
+.field span{
+    text-align: center;
+    bottom: 12px;
+    right: 18px;
+    font-size: 17px;
+    color: red;
+    margin: 10px 10px 10px 115px;
+    border-color: red;
+    font-weight: bold;
 }
