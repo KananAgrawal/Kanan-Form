@@ -6,58 +6,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/script.js">
     <title>Form</title>
 </head>
 <div class="container">
     <div  class="box">
         <div class="regis">
-            <form action="" class="frm">
+            <form action="#" class="frm">
                 
                 <h1 class="title">REGISTRATION FORM</h1><br><br><br><br>
             
                 <div class="field">
-                <label for="name">Name</label>
-                <input type="text" name="Name" id="name" placeholder="Enter Full Name"  onkeyup="validation()"><br>
-                <span id="name-error" class="text-danger"></span>
+                <label for="name"><i class="fa-solid fa-signature"></i>&nbsp;Name</label>
+                <input type="text" id="name" placeholder="Enter Full Name" autocomplete="off"><br>
+                <span id="name-error"></span>
             </div>
                 <div class="field">
-                <i class="fas fa-user"></i>&nbsp;<label for="uname">UserName</label>
-                <input type="text" name="UName" id="uname" placeholder="Enter Username"><br>
+                <label for="uname"><i class="fas fa-user"></i>&nbsp;UserName</label>
+                <input type="text" name="UName" id="uname" placeholder="Enter Username" autocomplete="off"><br>
                 <span id="username-error"></span>
             </div>
                 <div class="field">
-                <label for="eid">Email-Id</label>
-                <input type="email" name="Id" id="eid" placeholder="Enter Email-Id"><br>
+                <label for="eid"><i class="fa-solid fa-envelope"></i>&nbsp;Email-Id</label>
+                <input type="email" name="Id" id="eid" placeholder="Enter Email-Id" autocomplete="off"><br>
                 <span id="email-error"></span>
             </div>
                 <div class="field">
-                <label for="pno">Mobile No.</label>
-                <input type="text" name="mno" id="pno" placeholder="Enter Mobile No."><br>
+                <label for="pno"><i class="fa-solid fa-phone"></i>&nbsp;Mobile No.</label>
+                <input type="text" name="mno" id="pno" placeholder="Enter Mobile No." autocomplete="off"><br>
                 <span id="phone-error"></span>
             </div>
                 <div class="field">
-                <label for="stno">Student No.</label>
-                <input type="text" name="stnum" id="stno" placeholder="Enter Student No."><br>
+                <label for="stno"><i class="fas solid fa-binary-circle-check"></i>&nbsp;Student No.</label>
+                <input type="text" name="stnum" id="stno" placeholder="Enter Student No." autocomplete="off"><br>
                 <span id="stno-error"></span>
             </div>
                 <div class="field">
-                <label for="rollno">University Roll No.</label>
-                <input type="text" name="unum" id="rollno" placeholder="Enter University Roll No."><br>
+                <label for="rollno"><i class="fas fa-input-numeric"></i>&nbsp;University Roll No.</label>
+                <input type="text" name="unum" id="rollno" placeholder="Enter University Roll No." autocomplete="off"><br>
                 <span id="rollno-error"></span>
             </div>
                 <div class="field">
-                <label for="birthday">Date of Birth:</label>
-                <input type="date" name="birth" id="birthday"><br>
+                <label for="birthday"><i class="fa-solid fa-cake-candles"></i>&nbsp;Date of Birth:</label>
+                <input type="date" name="birth" id="birthday" autocomplete="off"><br>
                 <span id="DOB-error"></span>
             </div>  
                 <div class="field">
-                <label for="year">Year</label>
-                <input type="number" name="years" id="year" min="1" max="4" placeholder="Year"><br>
+                <label for="year"><i class="fa-solid fa-graduation-cap"></i>&nbsp;Year</label>
+                <input type="number" name="years" id="year" min="1" max="4" placeholder="Year" autocomplete="off"><br>
                 <span id="year-error"></span>
             </div>    
                 <div class="field">
-                <label for="branch">Branch</label>
-                <input list="branch" name="branches" placeholder="Branch">
+                <label for="branch"><i class="fa-solid fa-user-graduate"></i>&nbsp;Branch</label>
+                <input list="branch" name="branches" id ="bran" placeholder="Branch" autocomplete="off">
                 <span id="Branch-error"></span>
                 <datalist id="branch">
                     <option value="CSE"></option>
@@ -74,8 +75,8 @@
                 </datalist><br>
             </div>
                 <div class="field">
-                <label for="domain">Domain</label>
-                <input list="domain" name="domains" placeholder="Domain">
+                <label for="domain"><i class="fa-solid fa-laptop-code"></i>&nbsp;Domain</label>
+                <input list="domain" name="domains" placeholder="Domain" id="Dom" autocomplete="off">
                 <span id="domain-error"></span>
                 <datalist id="domain">
                     <option value="Web Development"></option>
@@ -85,39 +86,38 @@
                     <option value="Machine Learning"></option>
                 </datalist><br>
             </div>
-                <div class="field">
-                <label>Gender:</label>
-            </div> 
-                <div class="field">
-                <input type="radio" name="Gender" id="male" required>&nbsp;
+            
+                <div class="gender">
+                <label for="Gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            
+                <input type="radio" name="Gender" id="male">&nbsp
                 <label for="male">Male</label>
                 
-            </div>
-                <div class="field">
-                <input type="radio" name="Gender" id="female">&nbsp;
+                
+            
+                <input type="radio" name="Gender" id="female">&nbsp
                 <label for="female">Female</label>
-            </div>   
-                <div class="field">
-                <input type="radio" name="Gender" id="transgender">&nbsp
-                <label for="transgender">Transgender</label>
+              
+        
+                <input type="radio" name="Gender" id="transgender">
+                <label for="transgender">Transgender</label><br>
             </div>
                 <div class="field">
-                <i class="fas fa-lock"></i>&nbsp;
-                <label for="passwrd">Password</label>
-                <input type="password" name="Passwrd" id="passwrd" placeholder="Enter Password"><br>
+                <label for="passwrd"><i class="fas fa-lock"></i>&nbsp;Password</label>
+                <input type="password" name="Passwrd" id="passwrd" placeholder="Enter Password" autocomplete="off"><br>
                 <span id="password-error"></span>
             </div>
                 <div class="field">
-                <i class="fas fa-lock"></i>
-                <label for="conpass">Confirm Password</label>
-                <input type="password" name="ConPass" id="conpass" placeholder="Confirm Password"><br><br>
+                
+                <label for="conpass"><i class="fas fa-lock"></i>&nbsp;Confirm Password</label>
+                <input type="password" name="ConPass" id="conpass" placeholder="Confirm Password" autocomplete="off"><br><br>
                 <span id="conpass-error"></span>
             </div>
-                <div class="field">
-                <input type="submit" value="Submit" id="btn">
+                <div class="button">
+                <input type="submit" value="Submit" id="btn"
+                onclick="validation()">
                 <span id="submit-error"></span>
-            </div>  
-                <div class="field">
+                <br><br><br><br>
                 <input type="reset" value="Reset" id="btn1">
             </div>
                 <label for="cube1" id="btm">Login Here</label>
@@ -125,6 +125,6 @@
         </div>
     </div>
 </div>
-<script src="index.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

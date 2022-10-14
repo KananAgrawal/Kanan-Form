@@ -16,7 +16,7 @@ body{
     align-items: center;
     margin: 50px 325px 50px 325px;
     width: 830px;
-    height: 4143px;
+    height: 3168px;
     position: absolute;
     background-image: radial-gradient(rgb(255, 255, 255),rgb(190, 245, 236));
     box-shadow: 0px 0px 5px rgb(255, 68, 248),0px 0px 30px rgb(255, 68, 248),
@@ -26,6 +26,10 @@ body{
 
 #sup,#btn,#btn1{
     background-image: linear-gradient(45deg, #ff00c4, #8000ff);
+    color: rgb(242, 247, 247);
+    font-weight: bolder;
+    margin:10px 93px 2250px -10px;
+    width: 165px;
 }
 #btn,#btn1:focus{
     width: calc(100% - 80);
@@ -55,7 +59,7 @@ body{
     left: 40px;
     text-align: center;
     position: relative;
-    width: calc(100% - 80px);
+    width:   calc(100% - 80px);
     display: block;
     line-height: 40px;
     top: 20px;
@@ -68,10 +72,10 @@ body{
     font-size: 15px;
 }
 .frm input:focus{
-    width: calc(100% - 80);
-    left: 20px;
+    width:  calc(100% - 80px);
     background: #ffcbf9;
     box-shadow: 0px 0px 5px #000, 0px 0px 30px #c900b2;
+    
 }
 #btm{
     position: absolute;
@@ -91,12 +95,6 @@ body{
 .frm{
     height: 2366px;
 }
-input[type=radio]{
-    box-shadow: none;
-    float:left;
-    clear: none;
-    margin: 2px 0px 0px 2px;
-}
 .field span{
     text-align: center;
     bottom: 12px;
@@ -107,3 +105,35 @@ input[type=radio]{
     border-color: red;
     font-weight: bold;
 }
+.gender{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: min-content;
+    margin: auto 192px auto 192px;
+}
+.button{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    height: inherit;
+    justify-content: center;
+    align-items: center
+    ;
+}
+.gender label{
+    width: 60px;
+}
+.gender input{
+    border: none;
+    box-shadow: none;
+    
+    
+}
+.gender input:focus{
+    border: none;
+    box-shadow: none;
+
+}
+
+
